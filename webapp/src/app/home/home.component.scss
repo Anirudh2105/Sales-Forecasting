@@ -1,0 +1,265 @@
+.choose{
+  margin-left: 100px;
+  margin-top: 2.5rem;
+}
+
+input::placeholder {
+  color: #72FFFD;
+  background-color: #72FFFD;
+}
+
+input[type="file"] {
+  margin: 1rem;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.upload-progress {
+  width: 100%;
+  height: 10px;
+  margin-top: 1rem;
+  background-color: lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: green;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.dropdown {
+  margin: 0 1rem;
+}
+
+
+label {
+  margin-right: 0.5rem;
+}
+
+.container-content{
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f1eb;
+  box-sizing: border-box;
+  border-radius: 6rem;
+			
+}
+.upload-button-container{
+  margin-top: 10rem;
+}
+
+// Navabar CSS
+.navbar-collapse{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.middle-element{
+  padding-right: 120px;
+}
+.last-element{
+  padding-right: 120px;
+}
+.first-element{
+  padding-right: 120px;
+}
+.navbar-brand
+{
+  font-size: 36px;
+  font-weight: 600;
+  padding-right: 5rem;
+}
+.hawk{
+  padding-right: 10px;
+  color: #585858;
+}
+.er{
+  color: #681E00;
+}
+.navbar{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6f1eb;
+  position: fixed;
+  top: 0;
+  box-shadow: none;
+  width: 100%;
+  z-index: 1000;
+  height: 5rem;
+}
+.btn-yellow{
+  background-color: #fed9ab;
+  margin-right:16px;
+  box-shadow: none;
+  font-weight: 600;
+  color: black;
+}
+
+.btn-white{
+  margin-right:16px;
+  border: 1px solid black;
+  background-color: #FFEACC;
+  font-weight: 600;
+  color: black;
+  box-shadow: none;
+}
+.btn-position{
+  text-align: right;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+
+.upload-file{
+  background-color: white;
+}
+
+
+.container-content{
+  background-color: white;
+  border-radius: 1000px;
+}
+
+// -------------------------------
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:	#CCFFE9;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box select {
+  background-color:#fed9ab;
+  color:black;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(173, 250, 79, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.box::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: #fed9ab;
+  background-color: #fed9ab;
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: #fed9ab;
+  background-color: #fed9ab;
+}
+
+.box select option {
+  padding: 30px;
+  color: brown;
+}
+
+
+//------------------------
+
+.exp-image{
+  width: 300px;
+  height: 300px;
+  margin-left: 140px;
+  margin-top: 60px;
+}
+
+.header{
+  text-align: center;
+  margin-top: 65px;
+}
+.image-label{
+  margin-left: 8rem;
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-label1{
+  margin-left: 14rem;
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-label2{
+  margin-left: 9rem;
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-img{
+  text-align: center;
+}
+
+.btn{
+  color: black;
+  background-color: #fec987;
+}
+.predictit-container{
+  margin-top: 10rem;
+}
+
+// fOOTER CSS
+
+.footer-background {
+  margin-top: 100px;
+}
+
+//Container
+.container-overview{
+margin-top: 25rem;
+padding-left: 5rem;
+padding-right: 5rem;
+font-family: 'Nunito', sans-serif;
+}
+
+.upload-file-form{
+  border-radius: 10px;
+}
+
+.numerix{
+  border-radius: 2rem;
+}
+
+.periodicity{
+  border-radius: 2rem;
+}
+.dropdown-numerix{
+  margin-right: 10x;
+  border-radius: 2rem;
+}

@@ -1,0 +1,75 @@
+// Navabar CSS
+.navbar-collapse{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+  .middle-element{
+    padding-right: 120px;
+  }
+  .last-element{
+    padding-right: 120px;
+  }
+  .first-element{
+    padding-right: 120px;
+  }
+  .navbar-brand
+  {
+    font-size: 36px;
+    font-weight: 600;
+    padding-right: 5rem;
+  }
+  .hawk{
+    padding-right: 10px;
+    color: #585858;
+  }
+  .er{
+    color: #681E00;
+  }
+  .navbar{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6f1eb;
+    position: fixed;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;
+  }
+  .btn-yellow{
+    background-color: #fed9ab;
+    margin-right:16px;
+    box-shadow: none;
+    font-weight: 600;
+    color: black;
+  }
+  .btn-white{
+    margin-right:16px;
+    border: 1px solid black;
+    background-color: #f6f1eb;
+    font-weight: 600;
+    color: black;
+    box-shadow: none;
+  }
+  .btn-position{
+    text-align: right;
+  }
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-top: 10rem;
+    text-align: center;
+    margin-right: 3rem;
+    border: black;
+  }
+  .para{
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: brown;
+    font-size: 23px;
+  }
+  .svg-image{
+    margin-top: 10rem;
+    margin-left: 15rem;
+  }

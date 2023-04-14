@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@700&family=Montserrat:ital,wght@0,600;0,700;1,600&family=Nunito:wght@300&family=Poppins&display=swap');
+
+// NAVBAR
+
+.navbar-collapse{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+  .middle-element{
+    padding-right: 120px;
+  }
+  .last-element{
+    padding-right: 120px;
+  }
+  .first-element{
+    padding-right: 120px;
+  }
+  .navbar-brand
+  {
+    font-size: 36px;
+    font-weight: 600;
+    padding-right: 5rem;
+  }
+  .hawk{
+    padding-right: 10px;
+    color: #585858;
+  }
+  .er{
+    color: #681E00;
+  }
+  .navbar{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6f1eb;
+    position: fixed;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;
+  }
+  .btn-yellow{
+    background-color: #fed9ab;
+    margin-right:16px;
+    box-shadow: none;
+    font-weight: 600;
+    color: black;
+  }
+  .btn-white{
+    margin-right:16px;
+    border: 1px solid black;
+    background-color: #FFEACC;
+    font-weight: 600;
+    color: black;
+    box-shadow: none;
+  }
+  .btn-position{
+    text-align: right;
+  }
+
+  // Prediction
+.title-prediction{
+    margin-top: 10rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+   
+        color: black;
+}
+
+.pred-img{
+    margin-top: 5rem;
+    max-width: 70%;
+    height: auto;
+}
+.pred-img1{
+    margin-top: 5rem;
+    max-width: 90%;
+    height: auto;
+}
+.para{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.title{
+    font-family: 'Lato', sans-serif;
+    margin-top: 15rem;
+    margin-left: 8rem;
+}
+.title-powerbi{
+  font-family: 'Lato', sans-serif;
+  margin-top: 8rem;
+  margin-left: 8rem;
+}
+.prediction1{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    color: #964B00;
+}
+.prediction{
+    text-align: center;
+    margin-top: 2rem;
+}
+.img-prediction{
+    text-align: center;
+}
+
+
+.para-container{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.para-container-powerbi{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+// Footer css
+
+.footer-background {
+    margin-top: 100px;
+  }
+
+  .btn-colour{
+    color: black;
+    background-color: #fec987;
+  }

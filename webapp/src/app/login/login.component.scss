@@ -1,0 +1,95 @@
+.container {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1000rem;
+  text-align: center;
+  margin-right: 7rem;
+}
+
+.login-form {
+  width: 400px;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #fec987;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btn-primary {
+  background-color: #fec987;
+  border-radius: 10px;
+  width: 325px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: red;
+}
+
+.pass{
+  margin-bottom: 25px;
+}
+.user{
+  margin-bottom: 20px;
+}
+
+.svg-image{
+  width: 300px;
+  height: 300px;
+}
+.head-container{
+  text-align: center;
+  color: black;
+  padding-top: 3rem;
+}
+
+.header-login{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.para{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+///////////////////////////////////
+/// 
+/// 
+/// 

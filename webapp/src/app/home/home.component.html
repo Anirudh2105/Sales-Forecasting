@@ -1,0 +1,211 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" routerLink="/home">
+      <span class="hawk">PREDICT</span><span class="er">IT</span>
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto nav-items">
+        <li class="nav-item first-element">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item middle-element">
+          <a class="nav-link" href="/guidelines">Guidelines</a>
+        </li>
+        <!-- <li class="nav-item middle-element">
+          <a class="nav-link" routerLink="./about">Pricing</a>
+        </li>  -->
+        <li class="nav-item last-element" routerLinkActive="active">
+          <a class="nav-link" routerLink="/about"> About us</a>
+        </li>
+
+      </ul>
+      <!-- Left links -->
+
+      <div class="btn-position">
+        <!-- <button type="button" class="btn btn-primary btn-white me-3" routerLink="/login">
+          Login
+        </button> -->
+        <button type="button" class="btn btn-primary btn-yellow me-3" routerLink="">
+          Logout
+        </button>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+
+
+<div class="container container-content">
+  
+
+  <h1>Upload your file</h1>
+ 
+
+  <div class="upload-file">
+  <form>
+    <label for="file-upload" class="choose">Choose a file:</label>
+    <input type="file" id="file-upload" accept=".csv,.xlsx,.xls" placeholder="Choose a file" class="upload-files">
+  </form>
+</div>
+  <p class="warning" *ngIf="showWarning">Please select a valid CSV or Excel file.</p>
+  
+  <div class="upload-progress" *ngIf="uploadProgress > 0">
+    <div class="progress-bar" [style.width.%]="uploadProgress"></div>
+  </div>
+
+  <div class="dropdowns box">
+    
+    <div class="dropdown">
+      <label for="periodicity" title="Select periodicity">Periodicity:</label>
+      <select (change)="onPeriodicityChange($event)" id="periodicity" >
+        <option value="" selected disabled hidden class="periodicity">Select periodicity</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Yearly">Yearly</option>
+      </select>
+    </div>
+
+    
+    <div class="dropdown">
+      <label for="numerix" title="Select Numerix">Numerix:</label>
+      <select (change)="onNumerixChange($event)" id="numerix">
+        <option value="" selected disabled hidden class="numerix">Select numerix</option>
+        <option *ngFor="let num of numerixOptions" [value]="num">{{num}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="upload-button-container">
+    <button type="button" class="btn btn-success"  (click)="uploadFile()" [disabled]="!isUploadEnabled()">Upload</button>
+  </div>
+</div>
+
+<div class="predictit-container">
+  <h1 class="header"> WHAT DOES PREDICT IT DO? </h1>
+  <div class="d-flex align-items-start mb-3" style="height: 100px;">
+   <div>
+    <img src="../../assets/file_upload.svg" alt="" srcset="" class="exp-image">
+    <h4 class="image-label1">Upload your file</h4>
+    <!-- <p class="content-img">Upload the file in csv or in excel formats</p> -->
+   </div>
+   <div>
+    <img src="../../assets/wait_file.svg" alt="" srcset="" class="exp-image">
+    <h4 class="image-label">Give the Numerix and periodicity</h4>
+    <!-- <p class="content-img">Specify the numerix(the time duration) and periodicity(duration) once uploading the file</p> -->
+   </div>
+  
+   <div>
+    <img src="../../assets/See_results.svg" alt="" srcset="" class="exp-image">
+    <h4 class="image-label2" >Your predictions are ready</h4>
+    <!-- <p class="content-img">Your required prediction is done </p> -->
+   </div>
+  </div>
+  
+    
+  <!-- Overview -->
+  <div class="container-overview">
+    <p class="overview">Sales forecasting using machine learning involves using statistical models and algorithms to analyze historical sales data and predict future sales trends. This approach can provide valuable insights into consumer behavior, market trends, and potential business opportunities. One popular machine learning library used for time series forecasting is the Prophet library developed by Facebook, which we have implemented in this model. It uses Bayesian methods to model time series data, incorporating trend, seasonality, and holiday effects. Prophet is designed to be highly customizable and easy to use, making it accessible to both novice and experienced data scientists. Its flexibility and scalability have made it a popular choice for businesses and researchers alike.</p>
+  
+  </div>
+</div>
+
+
+
+<!-- 
+  fOOTER
+ -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start footer-background text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+
+      <a href="https://www.instagram.com/anirudh___21/" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/anirudh-j-3457611a0/" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Predict It
+          </h6>
+          <p>
+            Predict the future sales of your business
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>Anirudh J</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            anirudhjay2105@gmail.com
+          </p>
+          <p><i class="fas "></i>Feel Free to connect with me :) </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  
+
+
+
+
